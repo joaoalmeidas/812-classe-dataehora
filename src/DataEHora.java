@@ -72,43 +72,30 @@ public class DataEHora {
 		
 	}
 	
-
 	public int getDia() {
 		return dia;
 	}
-
-
 
 	public void setDia(int dia) {
 		this.dia = dia;
 	}
 
-
-
 	public int getMes() {
 		return mes;
 	}
-
-
 
 	public void setMes(int mes) {
 		this.mes = mes;
 	}
 
-
-
 	public int getAno() {
 		return ano;
 	}
 
-
-
 	public void setAno(int ano) {
 		this.ano = ano;
 	}
-
-
-
+	
 	public static int[] getDiaspormes() {
 		return diasPorMes;
 	}
@@ -164,8 +151,14 @@ public class DataEHora {
 		
 	}
 	
-	
 	public void tick() {
+		
+		if(getSegundo()%2 == 0) {
+			System.out.println("tick...");
+		}else {
+			System.out.println("tack...");
+		}
+		
 		if(getSegundo() == 59) {
 			setSegundo(0);
 			incrementaMinuto();
