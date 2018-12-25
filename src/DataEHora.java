@@ -195,7 +195,7 @@ public class DataEHora {
 	
 	public void proximoDia() {
 		
-		System.out.println(toString());
+		System.out.printf("\n\nVirada do dia : %d/%d/%d para o dia ", getDia(), getMes(), getAno());
 		
 		if(getDia() == 28 && getMes() == 2 && (getAno() % 400 == 0 || (getAno() % 4 == 0 && getAno() % 100 != 0))) {
 			
@@ -222,6 +222,8 @@ public class DataEHora {
 			setDia(getDia() + 1);
 			
 		}
+		
+		System.out.printf("%d/%d/%d\n\n", getDia(), getMes(), getAno());
 		
 	}
 
