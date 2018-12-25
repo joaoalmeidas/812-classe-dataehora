@@ -187,6 +187,7 @@ public class DataEHora {
 	public void incrementaHora() {
 		if(getHora() == 23) {
 			setHora(0);
+			proximoDia();
 		}else {
 			setHora(hora+1);
 		}
